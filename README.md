@@ -1,5 +1,5 @@
 # Title
- Multi-Platform-Music-Trend-Analysis
+ **Multi-Platform-Music-Trend-Analysis**
  
 Project Overview:
 This project analyzes multi-platform music streaming trends (Spotify, Apple, Deezer, Shazam, etc.) using Power BI.
@@ -11,7 +11,7 @@ Time-based trends & comparisons
 The Power BI dashboards offer a comprehensive view of streaming performance and help identify growth opportunities for artists, tracks, and platforms.
 
 Dataset
-File:attached in this repository contains 24 column
+File: attached in this repository contains 24 column
 
 Key Column:
 track_name – Track title
@@ -23,7 +23,7 @@ Playlist/Chart presence across Spotify, Apple, Deezer, Shazam
 
 DAX Measures:
 
-📈 Dashboard Features:
+ Dashboard Features:
 The dashboard contains the following visuals:
 1}Cards (KPIs):Total Streams
              Distinct Artists
@@ -36,7 +36,7 @@ The dashboard contains the following visuals:
 6)Line Chart:Monthly Streams over time
 7) Column Chart:Relationship between Danceability & Energy of Tracks
 
-🔑 Key Insights
+ Key Insights
 Artist Dominance: A handful of artists drive a large share of total streams.
 Track Characteristics: High-stream tracks often show higher danceability and energy, with balanced valence.
 BPM Distribution: Most popular tracks fall in the 100–140 BPM range.
@@ -51,7 +51,7 @@ Labels – Optimize promotion strategies across platforms
 Analysts – Track industry trends & growth patterns
 
 Tools Used:
-Excel-Raw Data
+Excel-Raw Data Source
 Power Query – Data cleaning & transformation
 Power BI Desktop – Data Modeling,Dax Measures,Dashboard Creation
-GitHub – Version control & collaboration
+GitHub – Project Sharing and Documentation
