@@ -1,0 +1,43 @@
+Column1,Column2,Column3,,,,,,,,,,,
+SL.NO,Measures,DAX Formula,,,,,,,,,,,
+1,Total Stream,SUM('Streaming Performance Table'[streams]),,,,,,,,,,,
+2,Distinct Tracks,DISTINCTCOUNT('Tracks Table'[Track_id]),,,,,,,,,,,
+3,Distinct Artists,DISTINCTCOUNT('Artists Table'[Artist_id]),,,,,,,,,,,
+4,Avg Streams per Track,"DIVIDE([Total Stream], [Distinct Tracks]) ",,,,,,,,,,,
+5,Avg Streams per Artist,"DIVIDE([Total Stream], [Distinct Artists])",,,,,,,,,,,
+6,All Artists,"CALCULATE([Distinct Artists],All('Artists Table'))",,,,,,,,,,,
+7,All Tracks,"CALCULATE([Distinct Tracks],All('Tracks Table'))",,,,,,,,,,,
+8,Artist Trend %,"DIVIDE([Total Stream],CALCULATE([Total Stream],'Artists Table'[Artist_id]))",,,,,,,,,,,
+9,Total Artists,SUM('Artists Table'[artist_count]),,,,,,,,,,,
+10,Avg Danceability,AVERAGE('Audio Features Table'[danceability_%]),,,,,,,,,,,
+11,Avg Energy,AVERAGE('Audio Features Table'[energy_%]),,,,,,,,,,,
+12,Avg BPM,AVERAGE('Audio Features Table'[bpm]),,,,,,,,,,,
+13,Avg Streams per Day,"AVERAGEX(VALUES('Calendar Table'[Date]), [Total Stream])",,,,,,,,,,,
+14,Streams YTD,"TOTALYTD([Total Stream], 'Calendar Table'[Date])",,,,,,,,,,,
+15,Streams MTD,"TOTALMTD([Total Stream], 'Calendar Table'[Date])",,,,,,,,,,,
+16,Streams QTD,"TOTALQTD([Total Stream], 'Calendar Table'[Date])",,,,,,,,,,,
+17,Previous Month Streams,"CALCULATE(
+    [Total Stream],
+    DATEADD('Calendar Table'[Date], -1, MONTH))",,,,,,,,,,,
+18,Rolling 7 Day Streams,"CALCULATE(
+    [Total Stream],
+    DATESINPERIOD(
+        'Calendar Table'[Date],
+        MAX('Calendar Table'[Date]),
+        -7,
+        DAY
+    )
+)",,,,,,,,,,,
+19,Previous Year Streams,"CALCULATE (
+    [Total Stream],
+    DATEADD ( 'Calendar Table'[Date], -1, YEAR )
+)",,,,,,,,,,,
+20,Total Streams 1,"SUMX('Streaming Performance Table','Streaming Performance Table'[in_apple_charts]+'Streaming Performance Table'[in_apple_playlists]+'Streaming Performance Table'[in_deezer_charts]+'Streaming Performance Table'[in_deezer_playlists]+'Streaming Performance Table'[in_spotify_playlists]+'Streaming Performance Table'[in_spotify_charts]+'Streaming Performance Table'[in_shazam_charts])",,,,,,,,,,,
+21,Total Apple Streams,"SUMX('Streaming Performance Table','Streaming Performance Table'[in_apple_charts]+'Streaming Performance Table'[in_apple_playlists])",,,,,,,,,,,
+22,Total Spotify Streams,"SUMX('Streaming Performance Table','Streaming Performance Table'[in_spotify_charts]+'Streaming Performance Table'[in_spotify_playlists])",,,,,,,,,,,
+23,Total Deezer Stremas,"SUMX('Streaming Performance Table','Streaming Performance Table'[in_deezer_charts]+'Streaming Performance Table'[in_deezer_playlists])",,,,,,,,,,,
+24,Total Shazam streams,SUM('Streaming Performance Table'[in_shazam_charts]),,,,,,,,,,,
+25,Spotify Share %,"DIVIDE([Total Spotify Streams],[Total Streams 1])",,,,,,,,,,,
+26,Apple Share %,"DIVIDE([Total Apple Streams],[Total Streams 1])",,,,,,,,,,,
+27,Deezer Share %,"DIVIDE([Total Deezer Stremas],[Total Streams 1])",,,,,,,,,,,
+28,Shazam Share %,"DIVIDE([Total Shazam streams],[Total Streams 1]) ",,,,,,,,,,,
