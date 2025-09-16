@@ -2,6 +2,7 @@
  **Multi-Platform-Music-Trend-Analysis**
  
 *Project Overview:*
+
 This project analyzes multi-platform music streaming trends (Spotify, Apple, Deezer, Shazam, etc.) using Power BI.
 It aims to explore:
 Artist & track popularity
