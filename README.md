@@ -12,19 +12,20 @@ Time-based trends & comparisons
 The Power BI dashboards offer a comprehensive view of streaming performance and help identify growth opportunities for artists, tracks, and platforms.
 
 Dataset
-File: attached in this repository contains 24 column
+File: Multi-platform Music Data.csv attached in this repository contains 24 columns
 
-*Key Column:
-track_name – Track title
-artist_name – Artist(s)
-Multi-Platform streams 
-released_year, released_month, released_day – Release date
-Audio Features : danceability, energy, valence, BPM
+*Key Column:*
+track_name – *Track title
+artist_name – *Artist(s)
+Multi-Platform streams* 
+released_year, released_month, released_day – Release date*
+Audio Features : *danceability, energy, valence, BPM
 Playlist/Chart presence across Spotify, Apple, Deezer, Shazam
 
 DAX Measures:
 
- Dashboard Features:
+*Dashboard Features:*
+
 The dashboard contains the following visuals:
 1}Cards (KPIs):Total Streams
              Distinct Artists
@@ -37,7 +38,7 @@ The dashboard contains the following visuals:
 6)Line Chart:Monthly Streams over time
 7) Column Chart:Relationship between Danceability & Energy of Tracks
 
- Key Insights
+* Key Insights*
 Artist Dominance: A handful of artists drive a large share of total streams.
 Track Characteristics: High-stream tracks often show higher danceability and energy, with balanced valence.
 BPM Distribution: Most popular tracks fall in the 100–140 BPM range.
