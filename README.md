@@ -102,7 +102,7 @@ This project demonstrates how music streaming trends can be effectively analyzed
 The dashboards provide value to:
 Artists – Understand feature-driven success factors
 Labels – Optimize promotion strategies across platforms
-Analysts – Track industry trends & growth patterns
+Analysts – Track industry trends & growth patterns.
 
 Tools Used:
 
