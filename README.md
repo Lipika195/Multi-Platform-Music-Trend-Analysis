@@ -48,8 +48,8 @@ Previous Year Streams =
 CALCULATE (
     [Total Stream],
     DATEADD ( 'Calendar Table'[Date], -1, YEAR ))
-
-    Rolling 7 Day Streams = 
+    
+ Rolling 7 Day Streams = 
 CALCULATE(
     [Total Stream],
     DATESINPERIOD(
@@ -82,7 +82,7 @@ The dashboard contains the following visuals:
                
  6)Line Chart:Monthly Streams over time
  
- 7) Column Chart:Relationship between Danceability & Energy of Tracks
+7)Column Chart:Relationship between Danceability & Energy of Tracks
 
  Key Insights
  
