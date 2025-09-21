@@ -5,7 +5,7 @@
 
 This project analyzes multi-platform music streaming trends (Spotify, Apple, Deezer, Shazam, etc.) using Power BI.
 It aims to explore artist & track popularity, platform contributions & chart presence, audio feature impact on streams, and time-based trends & comparisons
-The Power BI dashboards offer a comprehensive view of streaming performance and help identify growth opportunities for artists, tracks, and platforms.
+The Power BI dashboard offers a comprehensive view of streaming performance and help identify growth opportunities for artists, tracks, and platforms.
 
 Dataset:
 
